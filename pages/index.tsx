@@ -1,24 +1,8 @@
-import Button from "@/components/ui/Button/Button";
+import BalanceList from "@/components/BalanceLists/BalanceList/BalanceList";
+import BalanceLists from "@/components/BalanceLists/BalanceLists";
 
 const HomePage = () => {
-  return (
-    <>
-      <Button
-        onClick={() => {
-          console.log("Dodaje przychod");
-        }}
-        label={"Dodaj przychod"}
-      />
-
-      <Button
-        modifier="outline"
-        onClick={() => {
-          console.log("Dodaje wydatek");
-        }}
-        label={"Dodaj wydatek"}
-      />
-    </>
-  );
+  return <BalanceLists />;
 };
 
 export default HomePage;
