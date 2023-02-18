@@ -1,0 +1,18 @@
+@mixin base-style {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.cta {
+  @include base-style();
+  background-color: gray;
+  color: white;
+}
+
+.outline {
+  @include base-style();
+  background-color: white;
+  color: gray;
+  border-color: gray;
+  border-width: 2px;
+}
